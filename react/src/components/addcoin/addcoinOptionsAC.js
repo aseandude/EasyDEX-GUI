@@ -39,7 +39,7 @@ const addCoinOptionsAC = () => {
         _items.push({
           label: translate(`ASSETCHAINS.${_customAssetChains[key][i].toUpperCase()}`),
           icon: _customAssetChains[key][i].toLowerCase(),
-          value: `${_customAssetChains[key][i].toUpperCase()}|${key}`,
+          value: `${_customAssetChains[key][i].toUpperCase()}|${key}`, 
         });
       }
     }
