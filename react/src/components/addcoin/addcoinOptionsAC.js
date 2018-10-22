@@ -59,6 +59,7 @@ const addCoinOptionsAC = (activeCoins) => {
       availableModes = 'spv';
     }
 
+<<<<<<< HEAD
     if (_disabledAC.all.indexOf(_assetChains[i].toLowerCase()) === -1 &&
         (activeCoins === 'skip' || (activeCoins !== 'skip' &&
          activeCoins &&
@@ -66,6 +67,11 @@ const addCoinOptionsAC = (activeCoins) => {
          activeCoins.native &&
          activeCoins.spv.indexOf(_assetChains[i].toUpperCase()) === -1 &&
          activeCoins.native.indexOf(_assetChains[i].toUpperCase()) === -1))) {
+=======
+    if (_assetChains[i] !== 'MVP' &&
+        _assetChains[i] !== 'VRSC' &&
+        _assetChains[i] !== 'DSEC') {
+>>>>>>> aseandude-patch-1
       _items.push({
         label: `${translate(`ASSETCHAINS.${_assetChains[i].toUpperCase()}`)}${translate(`ASSETCHAINS.${_assetChains[i].toUpperCase()}`).indexOf('(') === -1 && translate(`ASSETCHAINS.${_assetChains[i].toUpperCase()}`) !== _assetChains[i].toUpperCase() ? ' (' + _assetChains[i].toUpperCase() + ')' : ''}`,
         icon: _assetChains[i].toLowerCase(),
